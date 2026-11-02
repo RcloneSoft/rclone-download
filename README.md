@@ -10,10 +10,19 @@ The ZIP contains `rclone.exe` and the accompanying documentation. It is a portab
 
 ## What rclone does
 
+`rclone` is a command-line file management tool for Windows. It connects local folders, network shares, and cloud storage through one consistent interface, so you can move and manage data without relying on a separate desktop client for every service.
+
 - Synchronizes files and directories between local storage and cloud providers
 - Creates backup copies with transfers, checks, and resumable operations
 - Supports many cloud and storage backends through one command-line tool
 - Provides filtering, encryption, checksums, retries, and scheduled automation
+
+Typical uses include:
+
+- Keeping a local work folder synchronized with cloud storage
+- Moving data directly from one cloud provider to another
+- Creating repeatable backups with exclusions and filters
+- Running transfers from PowerShell, scripts, or Windows Task Scheduler
 
 ## Quick start
 
