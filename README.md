@@ -30,14 +30,6 @@ Create a copy after configuring a remote:
 .\rclone.exe copy "C:\Users\Public\Documents" "remote:backups/documents" --progress
 ```
 
-## Package verification
-
-SHA-256:
-
-`8a9db2bad1dc79a65b3348fd857069598e2aab7cf4d118b77b1df23055aff818`
-
-The full upstream checksum list is included as `SHA256SUMS`.
-
 ## License and attribution
 
 rclone is an open-source project. This repository provides a package reference and GitHub-hosted delivery mirror for the RcloneSoft profile. See the upstream project for license and source details.
